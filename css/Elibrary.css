@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-navbg:#fff;
+    --color-black: #000;
+    --color-lighterblack:rgb(13, 13, 47);
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: rgb(187, 223, 237); /* nav color*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+#navbar {
+    width: 100%;
+    position: fixed;
+    height: 6rem;
+    box-shadow: 0 0 8px 0 rgb(187, 223, 237);
+    /*height: 6rem;*/
+    top: -40rem;
+    display: flex;
+    flex: 1;
+    align-items:center;
+    justify-content: space-between;
+    background-color:var(--color-navbg);
+    transition: top .5s;
+  
+}
+/*for menu icon*/
+.menu{
+    width:1.5rem;
+    margin-left: 50rem;
+    margin-top: 5px;
+}
+.search_icon{
+    width: 1.5rem;
+    margin-right: 12px;
+
+}
+.navigation_bar .right_info img{
+    width: 10rem;
+}*/
+/*to move left infomation*/
+.left_info{
+    display: flex;
+    align-items: center;
+}
+.left_info a{
+    height: 4rem;
+    font-size: 20px;
+    text-decoration: none;
+    color:black;
+    padding: 10px;
+    transition: .2s;
+
+}
+.left_info a:hover{
+    color: rgb(221, 237, 243);
+}
+.img_down img{
+    width: 1.5rem;
+    margin-top: 4rem;
+}
+.left_info img{
+    width: 1.8rem;
+    margin-right: 10px;
+}
+/*clone*/
+/*
+.container p {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container p span.typed-text {
+    font-weight: normal;
+    color: #dd7732;
+  }
+  .container p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3px;
+    animation: blink 1s infinite;
+  }
+  .container p span.cursor.typing {
+    animation: none;
+  }
+  @keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
+  }*/
+/*end of auto write*/
+.clone_bg{
+    width: 100%;
+    height:20.5rem;
+    /*background-image: url("accelerate.png");*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-attachment: fixed;
+    border: 2px solid #000;
+}
+.clone {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    top: 0;
+  
+}
+.clone .right_info img{
+
+    width: 10rem;
+}
+/*for the primary text*/
+.clone_bg h1{
+    margin-top: 50px;
+    text-align: center;
+    font-weight: medium;
+    font-size: 40px;
+}
+.clone_bg p{
+    
+    text-align: center;
+    font-size: 15px;
+}
+.text_clone{
+    line-height: 1.5rem;
+}
+.search{
+    width: 50.3%;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 22rem;   
+    border: 1px solid #000;
+    padding: 1px 0px 0;
+}
+.search img{
+    width: 1.5rem;
+}
+.clone_bg input[type=search]{
+    width: 90%;
+    height: 7.19vh;
+    border: 0;
+    font-size: large;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgb(187, 223, 237);
+    /*
+    height: 7.19vh;
+    align-items: center;
+    margin-left: 23%;
+    margin-top: 3px;
+    width: 50%;
+    font-size: xx-large;
+    border: 1px solid black;
+    border-bottom: 0;
+    */
+}
+.first_search{
+    width: 100%;
+    height: 8rem;
+    background-color:var(--color-lighterblack);
+    position: absolute;
+    position: fixed;
+}
+.first_search input[type=search]{
+    
+    width: 50%;
+    height: 7.19vh;
+    font-size: large;
+    margin-top: 3rem;
+    margin-left: 22rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    background: var(--color-lighterblack);
+}
+.first_search img{
+    width: 4rem;
+}
+#hide{
+ display: none;
+ transition: top 2s;   
+}
+/*Main library*/
+.sub_sec{
+    width: 100%;
+    display: flex;
+   
+}
+.sub_one img{
+    width: 5rem;
+}
+.sub_one p{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.sub_one{
+    width: 100%;
+    display: flex;
+    padding: 20px 10px 20px;
+    box-shadow: 0 0 8px 0 rgb(187, 223, 237);
+    border: 1px solid black;
+}
+/* this is for the physics radiology*/
+.book_container{
+    width: 100%;
+    height: 55vh;
+    margin: 5% 0 8%;
+    padding: 3% 6% 5%;
+}
+.book{
+    width: 95%;
+    height: 45vh;
+    padding: 3% 5% 3%;
+    display: flex;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+}
+.book_details{
+    width: 100%;
+    padding: 0 3% 0;
+}
+.book_details .btn{
+    display: flex;
+
+}
+.book_details .btn p{
+    width: 90%;
+    margin-top: 3rem;
+}
+.book_details .btn a{
+    margin-top: 2rem;
+    text-align: center;
+    padding-top: 1.5%;
+    width: 90%;
+    height: 6vh;
+    text-decoration: none;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.3);
+    color: black;
+    background-color: rgb(221, 237, 243);
+  
+    
+}
+/*grid*/
+.hidden_second{
+    display: none;
+}
+.main_grid{
+    background-color: #f1f1f1;
+    height: 250vh;
+    padding-top: 5rem;
+}
+.grid_container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    padding: 3em;
+}
+.grid_container a{
+    text-decoration: none;
+}
+.grid_content p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #000;
+}
+.grid_content h3{
+    color: #000;
+}
+.grid_content{
+    text-align: center;
+    padding-top: 3rem;
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(228, 251, 233);
+    box-shadow: 0 0 8px 0 rgba(0,0,0,00.3);
+    /*rgb(187, 223, 237)*/
+}
+.blue{
+    background-color:rgb(237, 245, 247) ;
+}
+
+.grid_content span img{
+    width: 2rem;
+}
+.grid_content img{
+    width: 4rem;
+}
+@media (min-width:880px) {
+    .grid_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+/*for the footer*/
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding:6% 4% 0;
+    background-color:  #000;
+    color: #fff;
+}
+.display_one{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    
+}
+.display_one button{
+    width: 20rem;
+    background-color: #818181;
+    color: #fff;
+    height: 2rem;
+    
+}
+.shift{
+    margin-left: 4rem;
+}
+.dispaly_two{
+    width: 100%;
+    display: flex;
+    margin-top: 6%;
+    line-height: 2rem;
+ 
+}
+.dispaly_two ul li{
+    list-style: none;
+}
+.dispaly_three{
+    margin-top: 6%;
+}
+#myDIV{
+    display: none;
+    flex-direction: column;
+}
+#myDIVsecond{
+    display: none;
+    flex-direction: column;
+
+}
+/* this is for the physics radiology*/
+
+@media (max-width:425px) {
+    .hidden_second{
+        display: block;
+    }
+    .blue{
+        background-color:#fff;
+    }
+    .hide{
+        display: none;
+    }
+    /*for menu icon*/
+    .menu{
+        width:1.5rem;
+        margin-left: 8rem;
+        margin-top: 3px;
+    }
+    .search_icon{
+        display: none;
+    }
+    .clone_bg{
+        width: 100%;
+        height: 20rem;
+        border-bottom: none;
+    }
+    .clone_bg h1{
+        margin-top: 2rem;
+        font-size: 20px;
+    }
+    .clone_bg p{
+        line-height: 15px;
+        font-size: 15px;
+    }
+    .first_search {
+        height: auto;
+    }
+    .first_search input[type=search]{
+    
+        width: 50%;
+        height: 7.19vh;
+        font-size: medium;
+        margin-top: 3px;
+        margin-left: 5px;
+        padding-left: 10px;
+
+    }
+    .clone_bg input[type=search]{
+        width: 90%;
+        height: 7.19vh;
+        border: 0;
+        font-size: medium;
+
+        }
+    .search{
+        width: 100%;
+        height: 4rem;
+        margin-left: 0px;  
+        margin-top: 4%; 
+        padding: 5px 0px 0;
+
+    }
+    /*Main library*/
+    .sub_sec{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .sub_one img{
+        width: 2rem;
+     }
+/*grid*/
+    .main_grid{
+        width: 100%;
+        height: 250vh;
+        padding-top: 5rem;
+    }
+    .grid_container{
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        padding: 1px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid_content p{
+        padding-top: 10px;
+        font-size: 13px;
+        color: #000;
+    }
+    .grid_content{
+       padding-top: 3rem;
+       width: 100%;
+       height: 20vh;
+    }
+    .grid_content span img{
+       width: 1.5rem;
+   }
+   .grid_content h3{
+    font-size: 10px;
+   }
+   .grid_content img{
+       width: 3rem;
+   }
+   /*footer*/
+    .footer{
+        display: flex;
+        flex-direction: column;
+        padding:6% 4% 0;
+
+    }
+    .display_one{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .display_one button{
+        width: 100%;
+        height: 2rem;
+        
+    }
+    .shift{
+        margin-left: 0px;
+        margin-top: 2rem;
+    }
+    .dispaly_two{
+        display: flex;
+        flex-direction: column;
+        margin-top: 6%;
+        line-height: 2rem;
+    }
+
+    .dispaly_three{
+        margin-top: 6%;
+    }
+    /*book displayer*/
+    .book_container{
+        width: 100%;
+        height: 150vh;
+        padding: 1% 5% 0;
+        /*
+        width: 100%;
+        height: 55vh;
+        margin: 5% 0 8%;
+        background-color: #f1f1f1;
+        border: 1px solid black;
+        padding: 3% 6% 5%;
+        */
+    }
+    .book{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        border: 0px solid black;
+        /*
+        width: 95%;
+        height: 45vh;
+        padding: 3% 5% 3%;
+        display: flex;
+        border: 1px solid black;
+        */
+    }
+    .book_details{
+        width: 100%;
+        /*
+        width: 100%;
+        padding: 0 3% 0;
+        */
+    }
+    .book_details .btn{
+        display: flex;
+        flex-direction: column;
+        line-height:1px ;
+    }
+    .book_details .btn a{
+        margin-top: 10px;
+        width: 90%;
+        height: 6vh;
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
+        line-height: 3rem;
+     
+    }
+}
+
